@@ -50,7 +50,7 @@ do
 	cpu_temp=`sensors | grep "Core 0:" | awk '{print $3}' | cut -c 2-3`
 	ram_avail=`free -m | grep "Mem" | awk '{print $7}'`
 	date=`date +"%H:%M"`
-	ssd_use=`df -h | grep -w "/" | awk '{print $5}'`
+	ssd_use=`df -h | grep -w "/" | awk '{print $3}'`
 	hdd_win=`df -h| grep -w "/mnt/windows" | awk '{print $3}' |  cut -c 1-2` 
 	hdd_com=`df -h | grep -w "/mnt/common" | awk '{print $3}' | cut -c 1-2`
 	hdd_use=$(($hdd_com+$hdd_win))
