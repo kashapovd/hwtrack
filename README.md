@@ -1,1 +1,1 @@
-#hwtrack - check your hardware stats with arduino
+hwtrack - check your hardware stats with arduino
